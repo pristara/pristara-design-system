@@ -1,0 +1,208 @@
+/* public/css/pristara/design-system.css */
+/**
+ * Pristara Design System - Core Variables
+ * نسخه: 1.0.0
+ * تاریخ: ۱۴۰۲/۱۰/۱۶
+ */
+
+:root {
+  /* ====== رنگ‌های اصلی پریستارا ====== */
+  --psa-color-primary: #1abc9c;          /* فیروزه‌ای اصلی پریستارا */
+  --psa-color-primary-dark: #16a085;     /* فیروزه‌ای تیره */
+  --psa-color-primary-light: #48c9b0;    /* فیروزه‌ای روشن */
+  --psa-color-primary-50: #e8f6f3;       /* فیروزه‌ای بسیار روشن */
+  
+  /* رنگ‌های ثانویه */
+  --psa-color-secondary: #3498db;        /* آبی */
+  --psa-color-success: #27ae60;          /* سبز */
+  --psa-color-warning: #f39c12;          /* نارنجی */
+  --psa-color-danger: #e74c3c;           /* قرمز */
+  --psa-color-info: #2980b9;             /* آبی اطلسی */
+  
+  /* رنگ‌های خاکستری */
+  --psa-color-gray-50: #fafafa;
+  --psa-color-gray-100: #f5f5f5;
+  --psa-color-gray-200: #eeeeee;
+  --psa-color-gray-300: #e0e0e0;
+  --psa-color-gray-400: #bdbdbd;
+  --psa-color-gray-500: #9e9e9e;
+  --psa-color-gray-600: #757575;
+  --psa-color-gray-700: #616161;
+  --psa-color-gray-800: #424242;
+  --psa-color-gray-900: #212121;
+  
+  /* رنگ‌های معنایی */
+  --psa-color-text-primary: var(--psa-color-gray-900);
+  --psa-color-text-secondary: var(--psa-color-gray-700);
+  --psa-color-text-disabled: var(--psa-color-gray-500);
+  
+  --psa-color-bg-primary: #ffffff;
+  --psa-color-bg-secondary: var(--psa-color-gray-50);
+  --psa-color-bg-tertiary: var(--psa-color-gray-100);
+  
+  --psa-color-border: var(--psa-color-gray-300);
+  --psa-color-divider: var(--psa-color-gray-200);
+  
+  /* ====== تایپوگرافی فارسی ====== */
+  --psa-font-family-primary: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --psa-font-family-secondary: 'Estedad', 'Vazirmatn', sans-serif;
+  --psa-font-family-monospace: 'Vazir Code', 'Cascadia Code', 'Consolas', monospace;
+  
+  /* اندازه فونت‌ها */
+  --psa-font-size-xs: 0.75rem;    /* 12px */
+  --psa-font-size-sm: 0.875rem;   /* 14px */
+  --psa-font-size-base: 1rem;     /* 16px */
+  --psa-font-size-lg: 1.125rem;   /* 18px */
+  --psa-font-size-xl: 1.25rem;    /* 20px */
+  --psa-font-size-2xl: 1.5rem;    /* 24px */
+  --psa-font-size-3xl: 1.875rem;  /* 30px */
+  --psa-font-size-4xl: 2.25rem;   /* 36px */
+  --psa-font-size-5xl: 3rem;      /* 48px */
+  
+  /* وزن فونت‌ها */
+  --psa-font-weight-thin: 100;
+  --psa-font-weight-light: 300;
+  --psa-font-weight-normal: 400;
+  --psa-font-weight-medium: 500;
+  --psa-font-weight-semibold: 600;
+  --psa-font-weight-bold: 700;
+  --psa-font-weight-black: 900;
+  
+  /* ارتفاع خط */
+  --psa-line-height-tight: 1.25;
+  --psa-line-height-normal: 1.5;
+  --psa-line-height-loose: 1.75;
+  --psa-line-height-relaxed: 2;
+  
+  /* ====== سایزها و فاصله‌ها ====== */
+  /* واحد پایه: 4px */
+  --psa-spacing-unit: 4px;
+  
+  /* Spacing Scale */
+  --psa-spacing-0: 0;
+  --psa-spacing-1: calc(var(--psa-spacing-unit) * 1);   /* 4px */
+  --psa-spacing-2: calc(var(--psa-spacing-unit) * 2);   /* 8px */
+  --psa-spacing-3: calc(var(--psa-spacing-unit) * 3);   /* 12px */
+  --psa-spacing-4: calc(var(--psa-spacing-unit) * 4);   /* 16px */
+  --psa-spacing-5: calc(var(--psa-spacing-unit) * 5);   /* 20px */
+  --psa-spacing-6: calc(var(--psa-spacing-unit) * 6);   /* 24px */
+  --psa-spacing-8: calc(var(--psa-spacing-unit) * 8);   /* 32px */
+  --psa-spacing-10: calc(var(--psa-spacing-unit) * 10); /* 40px */
+  --psa-spacing-12: calc(var(--psa-spacing-unit) * 12); /* 48px */
+  --psa-spacing-16: calc(var(--psa-spacing-unit) * 16); /* 64px */
+  --psa-spacing-20: calc(var(--psa-spacing-unit) * 20); /* 80px */
+  
+  /* ====== Border Radius ====== */
+  --psa-border-radius-none: 0;
+  --psa-border-radius-sm: 2px;
+  --psa-border-radius-base: 4px;
+  --psa-border-radius-md: 6px;
+  --psa-border-radius-lg: 8px;
+  --psa-border-radius-xl: 12px;
+  --psa-border-radius-2xl: 16px;
+  --psa-border-radius-full: 9999px;
+  
+  /* ====== سایه‌ها (Shadows) ====== */
+  --psa-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --psa-shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --psa-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --psa-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --psa-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --psa-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --psa-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  
+  /* ====== انیمیشن‌ها ====== */
+  --psa-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --psa-transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --psa-transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* ====== Z-Index Scale ====== */
+  --psa-z-index-dropdown: 1000;
+  --psa-z-index-sticky: 1020;
+  --psa-z-index-fixed: 1030;
+  --psa-z-index-modal-backdrop: 1040;
+  --psa-z-index-modal: 1050;
+  --psa-z-index-popover: 1060;
+  --psa-z-index-tooltip: 1070;
+  --psa-z-index-toast: 1080;
+  
+  /* ====== اندازه‌های عمومی ====== */
+  --psa-header-height: 64px;
+  --psa-sidebar-width: 260px;
+  --psa-sidebar-width-collapsed: 64px;
+  --psa-content-max-width: 1280px;
+}
+
+/* ====== تنظیمات عمومی برای فارسی و RTL ====== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  direction: rtl;
+  text-align: right;
+}
+
+body {
+  font-family: var(--psa-font-family-primary);
+  font-size: var(--psa-font-size-base);
+  line-height: var(--psa-line-height-normal);
+  color: var(--psa-color-text-primary);
+  background-color: var(--psa-color-bg-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* رفع مشکلات نمایشی در RTL */
+input,
+textarea,
+select {
+  font-family: var(--psa-font-family-primary);
+  text-align: right;
+}
+
+/* برای نمایش صحیح اعداد فارسی */
+.psa-persian-numbers {
+  font-feature-settings: "ss01", "tnum" 0;
+}
+
+/* ====== کلاس‌های کمکی برای RTL ====== */
+.psa-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.psa-ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* ====== Reset برای لیست‌ها ====== */
+ul, ol {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/* ====== لینک‌ها ====== */
+a {
+  color: var(--psa-color-primary);
+  text-decoration: none;
+  transition: color var(--psa-transition-fast);
+}
+
+a:hover {
+  color: var(--psa-color-primary-dark);
+  text-decoration: underline;
+}
+
+/* ====== کلاس‌های کمکی رنگ ====== */
+.psa-text-primary { color: var(--psa-color-text-primary) !important; }
+.psa-text-secondary { color: var(--psa-color-text-secondary) !important; }
+.psa-text-disabled { color: var(--psa-color-text-disabled) !important; }
+
+.psa-bg-primary { background-color: var(--psa-color-bg-primary) !important; }
+.psa-bg-secondary { background-color: var(--psa-color-bg-secondary) !important; }
+.psa-bg-tertiary { background-color: var(--psa-color-bg-tertiary) !important; }

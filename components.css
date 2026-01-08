@@ -1,0 +1,543 @@
+/* public/css/pristara/components.css */
+/**
+ * Pristara Design System - Components
+ * کامپوننت‌های اصلی سیستم طراحی پریستارا
+ */
+
+/* ====== دکمه‌ها (Buttons) ====== */
+.psa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--psa-spacing-2);
+  font-family: var(--psa-font-family-primary);
+  font-weight: var(--psa-font-weight-medium);
+  font-size: var(--psa-font-size-base);
+  line-height: var(--psa-line-height-normal);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: var(--psa-border-radius-base);
+  padding: var(--psa-spacing-2) var(--psa-spacing-4);
+  transition: all var(--psa-transition-fast);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* اندازه‌های دکمه */
+.psa-btn-xs {
+  font-size: var(--psa-font-size-xs);
+  padding: var(--psa-spacing-1) var(--psa-spacing-2);
+  min-height: 24px;
+}
+
+.psa-btn-sm {
+  font-size: var(--psa-font-size-sm);
+  padding: var(--psa-spacing-2) var(--psa-spacing-3);
+  min-height: 32px;
+}
+
+.psa-btn-md {
+  font-size: var(--psa-font-size-base);
+  padding: var(--psa-spacing-2) var(--psa-spacing-4);
+  min-height: 40px;
+}
+
+.psa-btn-lg {
+  font-size: var(--psa-font-size-lg);
+  padding: var(--psa-spacing-3) var(--psa-spacing-5);
+  min-height: 48px;
+}
+
+.psa-btn-xl {
+  font-size: var(--psa-font-size-xl);
+  padding: var(--psa-spacing-4) var(--psa-spacing-6);
+  min-height: 56px;
+}
+
+/* استایل‌های دکمه */
+.psa-btn-primary {
+  background-color: var(--psa-color-primary);
+  color: white;
+  border-color: var(--psa-color-primary);
+}
+
+.psa-btn-primary:hover:not(:disabled) {
+  background-color: var(--psa-color-primary-dark);
+  border-color: var(--psa-color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--psa-shadow-md);
+}
+
+.psa-btn-secondary {
+  background-color: var(--psa-color-secondary);
+  color: white;
+  border-color: var(--psa-color-secondary);
+}
+
+.psa-btn-secondary:hover:not(:disabled) {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-1px);
+  box-shadow: var(--psa-shadow-md);
+}
+
+.psa-btn-success {
+  background-color: var(--psa-color-success);
+  color: white;
+  border-color: var(--psa-color-success);
+}
+
+.psa-btn-success:hover:not(:disabled) {
+  background-color: #219653;
+  border-color: #219653;
+  transform: translateY(-1px);
+  box-shadow: var(--psa-shadow-md);
+}
+
+.psa-btn-warning {
+  background-color: var(--psa-color-warning);
+  color: white;
+  border-color: var(--psa-color-warning);
+}
+
+.psa-btn-warning:hover:not(:disabled) {
+  background-color: #e67e22;
+  border-color: #e67e22;
+  transform: translateY(-1px);
+  box-shadow: var(--psa-shadow-md);
+}
+
+.psa-btn-danger {
+  background-color: var(--psa-color-danger);
+  color: white;
+  border-color: var(--psa-color-danger);
+}
+
+.psa-btn-danger:hover:not(:disabled) {
+  background-color: #c0392b;
+  border-color: #c0392b;
+  transform: translateY(-1px);
+  box-shadow: var(--psa-shadow-md);
+}
+
+/* دکمه Outline */
+.psa-btn-outline {
+  background-color: transparent;
+  border-width: 2px;
+}
+
+.psa-btn-outline-primary {
+  color: var(--psa-color-primary);
+  border-color: var(--psa-color-primary);
+}
+
+.psa-btn-outline-primary:hover:not(:disabled) {
+  background-color: var(--psa-color-primary);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--psa-shadow-md);
+}
+
+.psa-btn-outline-secondary {
+  color: var(--psa-color-secondary);
+  border-color: var(--psa-color-secondary);
+}
+
+.psa-btn-outline-secondary:hover:not(:disabled) {
+  background-color: var(--psa-color-secondary);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--psa-shadow-md);
+}
+
+/* دکمه Ghost (بدون پس‌زمینه و border) */
+.psa-btn-ghost {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.psa-btn-ghost-primary {
+  color: var(--psa-color-primary);
+}
+
+.psa-btn-ghost-primary:hover:not(:disabled) {
+  background-color: var(--psa-color-primary-50);
+}
+
+/* دکمه Link (شبیه لینک) */
+.psa-btn-link {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--psa-color-primary);
+  text-decoration: underline;
+  padding: 0;
+  height: auto;
+}
+
+.psa-btn-link:hover:not(:disabled) {
+  color: var(--psa-color-primary-dark);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* وضعیت‌های دکمه */
+.psa-btn:disabled,
+.psa-btn.psa-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.psa-btn-block {
+  display: flex;
+  width: 100%;
+}
+
+/* آیکون در دکمه */
+.psa-btn .psa-icon {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.psa-btn .psa-icon-start {
+  margin-left: var(--psa-spacing-2);
+}
+
+.psa-btn .psa-icon-end {
+  margin-right: var(--psa-spacing-2);
+}
+
+/* ====== کارت‌ها (Cards) ====== */
+.psa-card {
+  background-color: var(--psa-color-bg-primary);
+  border: 1px solid var(--psa-color-border);
+  border-radius: var(--psa-border-radius-lg);
+  overflow: hidden;
+  transition: all var(--psa-transition-normal);
+  box-shadow: var(--psa-shadow-sm);
+}
+
+.psa-card:hover {
+  box-shadow: var(--psa-shadow-md);
+  transform: translateY(-2px);
+}
+
+.psa-card-header {
+  padding: var(--psa-spacing-4) var(--psa-spacing-4) 0;
+  border-bottom: 1px solid var(--psa-color-divider);
+  margin-bottom: var(--psa-spacing-4);
+}
+
+.psa-card-title {
+  font-size: var(--psa-font-size-lg);
+  font-weight: var(--psa-font-weight-semibold);
+  color: var(--psa-color-text-primary);
+  margin: 0 0 var(--psa-spacing-2) 0;
+}
+
+.psa-card-subtitle {
+  font-size: var(--psa-font-size-sm);
+  color: var(--psa-color-text-secondary);
+  margin: 0;
+}
+
+.psa-card-body {
+  padding: var(--psa-spacing-4);
+}
+
+.psa-card-footer {
+  padding: 0 var(--psa-spacing-4) var(--psa-spacing-4);
+  border-top: 1px solid var(--psa-color-divider);
+  margin-top: var(--psa-spacing-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* انواع کارت */
+.psa-card-shadow {
+  box-shadow: var(--psa-shadow-md);
+  border: none;
+}
+
+.psa-card-bordered {
+  border: 2px solid var(--psa-color-border);
+}
+
+.psa-card-primary {
+  border-color: var(--psa-color-primary);
+  border-width: 2px;
+}
+
+.psa-card-secondary {
+  border-color: var(--psa-color-secondary);
+  border-width: 2px;
+}
+
+/* ====== فرم‌ها (Forms) ====== */
+.psa-form-group {
+  margin-bottom: var(--psa-spacing-4);
+}
+
+.psa-form-label {
+  display: block;
+  font-size: var(--psa-font-size-sm);
+  font-weight: var(--psa-font-weight-medium);
+  color: var(--psa-color-text-primary);
+  margin-bottom: var(--psa-spacing-2);
+}
+
+.psa-form-label-required::after {
+  content: " *";
+  color: var(--psa-color-danger);
+}
+
+.psa-form-hint {
+  display: block;
+  font-size: var(--psa-font-size-xs);
+  color: var(--psa-color-text-secondary);
+  margin-top: var(--psa-spacing-1);
+}
+
+.psa-form-error {
+  display: block;
+  font-size: var(--psa-font-size-xs);
+  color: var(--psa-color-danger);
+  margin-top: var(--psa-spacing-1);
+}
+
+/* فیلدهای ورودی */
+.psa-form-control {
+  display: block;
+  width: 100%;
+  font-family: var(--psa-font-family-primary);
+  font-size: var(--psa-font-size-base);
+  line-height: var(--psa-line-height-normal);
+  color: var(--psa-color-text-primary);
+  background-color: var(--psa-color-bg-primary);
+  border: 1px solid var(--psa-color-border);
+  border-radius: var(--psa-border-radius-base);
+  padding: var(--psa-spacing-2) var(--psa-spacing-3);
+  transition: all var(--psa-transition-fast);
+  direction: rtl;
+  text-align: right;
+}
+
+.psa-form-control:focus {
+  outline: none;
+  border-color: var(--psa-color-primary);
+  box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.15);
+}
+
+.psa-form-control:disabled {
+  background-color: var(--psa-color-gray-100);
+  cursor: not-allowed;
+}
+
+.psa-form-control-error {
+  border-color: var(--psa-color-danger);
+}
+
+.psa-form-control-error:focus {
+  border-color: var(--psa-color-danger);
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15);
+}
+
+.psa-form-control-success {
+  border-color: var(--psa-color-success);
+}
+
+.psa-form-control-success:focus {
+  border-color: var(--psa-color-success);
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
+}
+
+/* اندازه‌های فیلد */
+.psa-form-control-sm {
+  font-size: var(--psa-font-size-sm);
+  padding: var(--psa-spacing-1) var(--psa-spacing-2);
+  height: 32px;
+}
+
+.psa-form-control-md {
+  font-size: var(--psa-font-size-base);
+  padding: var(--psa-spacing-2) var(--psa-spacing-3);
+  height: 40px;
+}
+
+.psa-form-control-lg {
+  font-size: var(--psa-font-size-lg);
+  padding: var(--psa-spacing-3) var(--psa-spacing-4);
+  height: 48px;
+}
+
+/* Textarea */
+.psa-textarea {
+  min-height: 100px;
+  resize: vertical;
+  line-height: var(--psa-line-height-loose);
+}
+
+/* Select */
+.psa-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left var(--psa-spacing-3) center;
+  background-size: 16px;
+  padding-left: var(--psa-spacing-8);
+}
+
+/* Checkbox و Radio */
+.psa-form-check {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--psa-spacing-3);
+  cursor: pointer;
+}
+
+.psa-form-check-input {
+  margin: 0.2rem 0 0 0.5rem;
+  flex-shrink: 0;
+}
+
+.psa-form-check-label {
+  font-size: var(--psa-font-size-base);
+  color: var(--psa-color-text-primary);
+  user-select: none;
+}
+
+.psa-form-check-inline {
+  display: inline-flex;
+  margin-left: var(--psa-spacing-4);
+}
+
+/* Input Group */
+.psa-input-group {
+  display: flex;
+  width: 100%;
+}
+
+.psa-input-group .psa-form-control {
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+}
+
+.psa-input-group-prepend,
+.psa-input-group-append {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--psa-spacing-3);
+  background-color: var(--psa-color-gray-100);
+  border: 1px solid var(--psa-color-border);
+  color: var(--psa-color-text-secondary);
+  font-size: var(--psa-font-size-sm);
+  white-space: nowrap;
+}
+
+.psa-input-group-prepend {
+  border-left: none;
+  border-radius: 0 var(--psa-border-radius-base) var(--psa-border-radius-base) 0;
+}
+
+.psa-input-group-append {
+  border-right: none;
+  border-radius: var(--psa-border-radius-base) 0 0 var(--psa-border-radius-base);
+}
+
+.psa-input-group .psa-btn {
+  position: relative;
+  z-index: 2;
+}
+
+/* ====== Badges ====== */
+.psa-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--psa-font-size-xs);
+  font-weight: var(--psa-font-weight-medium);
+  line-height: 1;
+  padding: var(--psa-spacing-1) var(--psa-spacing-2);
+  border-radius: var(--psa-border-radius-full);
+  white-space: nowrap;
+}
+
+.psa-badge-primary {
+  background-color: var(--psa-color-primary);
+  color: white;
+}
+
+.psa-badge-secondary {
+  background-color: var(--psa-color-secondary);
+  color: white;
+}
+
+.psa-badge-success {
+  background-color: var(--psa-color-success);
+  color: white;
+}
+
+.psa-badge-warning {
+  background-color: var(--psa-color-warning);
+  color: white;
+}
+
+.psa-badge-danger {
+  background-color: var(--psa-color-danger);
+  color: white;
+}
+
+.psa-badge-info {
+  background-color: var(--psa-color-info);
+  color: white;
+}
+
+.psa-badge-light {
+  background-color: var(--psa-color-gray-200);
+  color: var(--psa-color-gray-800);
+}
+
+.psa-badge-dark {
+  background-color: var(--psa-color-gray-800);
+  color: white;
+}
+
+/* Badge Outline */
+.psa-badge-outline {
+  background-color: transparent;
+  border: 1px solid currentColor;
+}
+
+.psa-badge-outline-primary {
+  color: var(--psa-color-primary);
+}
+
+.psa-badge-outline-secondary {
+  color: var(--psa-color-secondary);
+}
+
+.psa-badge-outline-success {
+  color: var(--psa-color-success);
+}
+
+.psa-badge-outline-warning {
+  color: var(--psa-color-warning);
+}
+
+.psa-badge-outline-danger {
+  color: var(--psa-color-danger);
+}
+
+/* Badge با آیکون */
+.psa-badge .psa-icon {
+  width: 0.875em;
+  height: 0.875em;
+  margin-left: var(--psa-spacing-1);
+}

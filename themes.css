@@ -1,0 +1,560 @@
+/* public/css/pristara/themes.css */
+/**
+ * Pristara Design System - Themes
+ * تم‌های روشن و تاریک سیستم طراحی پریستارا
+ */
+
+/* ====== تم روشن (پیش‌فرض) ====== */
+:root {
+  /* همان متغیرهای اصلی که قبلاً تعریف شدند */
+  /* این متغیرها برای تم روشن هستند */
+  
+  /* رنگ‌های تم روشن */
+  --psa-theme-bg-primary: #ffffff;
+  --psa-theme-bg-secondary: #f8f9fa;
+  --psa-theme-bg-tertiary: #e9ecef;
+  
+  --psa-theme-surface: #ffffff;
+  --psa-theme-surface-hover: #f8f9fa;
+  
+  --psa-theme-border: #dee2e6;
+  --psa-theme-divider: #e9ecef;
+  
+  --psa-theme-text-primary: #212529;
+  --psa-theme-text-secondary: #6c757d;
+  --psa-theme-text-tertiary: #adb5bd;
+  --psa-theme-text-disabled: #ced4da;
+  
+  --psa-theme-shadow-color: rgba(0, 0, 0, 0.1);
+  --psa-theme-shadow-color-light: rgba(0, 0, 0, 0.05);
+  
+  /* سایه‌ها برای تم روشن */
+  --psa-theme-shadow-sm: 0 1px 2px 0 var(--psa-theme-shadow-color-light);
+  --psa-theme-shadow: 0 1px 3px 0 var(--psa-theme-shadow-color), 0 1px 2px 0 var(--psa-theme-shadow-color-light);
+  --psa-theme-shadow-md: 0 4px 6px -1px var(--psa-theme-shadow-color), 0 2px 4px -1px var(--psa-theme-shadow-color-light);
+  --psa-theme-shadow-lg: 0 10px 15px -3px var(--psa-theme-shadow-color), 0 4px 6px -2px var(--psa-theme-shadow-color-light);
+  --psa-theme-shadow-xl: 0 20px 25px -5px var(--psa-theme-shadow-color), 0 10px 10px -5px var(--psa-theme-shadow-color);
+  
+  /* Override متغیرهای اصلی با تم روشن */
+  --psa-color-bg-primary: var(--psa-theme-bg-primary);
+  --psa-color-bg-secondary: var(--psa-theme-bg-secondary);
+  --psa-color-bg-tertiary: var(--psa-theme-bg-tertiary);
+  
+  --psa-color-text-primary: var(--psa-theme-text-primary);
+  --psa-color-text-secondary: var(--psa-theme-text-secondary);
+  --psa-color-text-disabled: var(--psa-theme-text-disabled);
+  
+  --psa-color-border: var(--psa-theme-border);
+  --psa-color-divider: var(--psa-theme-divider);
+  
+  --psa-shadow-sm: var(--psa-theme-shadow-sm);
+  --psa-shadow-base: var(--psa-theme-shadow);
+  --psa-shadow-md: var(--psa-theme-shadow-md);
+  --psa-shadow-lg: var(--psa-theme-shadow-lg);
+  --psa-shadow-xl: var(--psa-theme-shadow-xl);
+}
+
+/* ====== تم تاریک ====== */
+[data-theme="dark"],
+.psa-theme-dark {
+  /* رنگ‌های تم تاریک */
+  --psa-theme-bg-primary: #1a1a1a;
+  --psa-theme-bg-secondary: #2d2d2d;
+  --psa-theme-bg-tertiary: #404040;
+  
+  --psa-theme-surface: #2d2d2d;
+  --psa-theme-surface-hover: #404040;
+  
+  --psa-theme-border: #404040;
+  --psa-theme-divider: #4d4d4d;
+  
+  --psa-theme-text-primary: #f8f9fa;
+  --psa-theme-text-secondary: #adb5bd;
+  --psa-theme-text-tertiary: #6c757d;
+  --psa-theme-text-disabled: #495057;
+  
+  --psa-theme-shadow-color: rgba(0, 0, 0, 0.3);
+  --psa-theme-shadow-color-light: rgba(0, 0, 0, 0.2);
+  
+  /* سایه‌ها برای تم تاریک */
+  --psa-theme-shadow-sm: 0 1px 2px 0 var(--psa-theme-shadow-color-light);
+  --psa-theme-shadow: 0 1px 3px 0 var(--psa-theme-shadow-color), 0 1px 2px 0 var(--psa-theme-shadow-color-light);
+  --psa-theme-shadow-md: 0 4px 6px -1px var(--psa-theme-shadow-color), 0 2px 4px -1px var(--psa-theme-shadow-color-light);
+  --psa-theme-shadow-lg: 0 10px 15px -3px var(--psa-theme-shadow-color), 0 4px 6px -2px var(--psa-theme-shadow-color-light);
+  --psa-theme-shadow-xl: 0 20px 25px -5px var(--psa-theme-shadow-color), 0 10px 10px -5px var(--psa-theme-shadow-color);
+  
+  /* Override متغیرهای اصلی با تم تاریک */
+  --psa-color-bg-primary: var(--psa-theme-bg-primary);
+  --psa-color-bg-secondary: var(--psa-theme-bg-secondary);
+  --psa-color-bg-tertiary: var(--psa-theme-bg-tertiary);
+  
+  --psa-color-text-primary: var(--psa-theme-text-primary);
+  --psa-color-text-secondary: var(--psa-theme-text-secondary);
+  --psa-color-text-disabled: var(--psa-theme-text-disabled);
+  
+  --psa-color-border: var(--psa-theme-border);
+  --psa-color-divider: var(--psa-theme-divider);
+  
+  --psa-shadow-sm: var(--psa-theme-shadow-sm);
+  --psa-shadow-base: var(--psa-theme-shadow);
+  --psa-shadow-md: var(--psa-theme-shadow-md);
+  --psa-shadow-lg: var(--psa-theme-shadow-lg);
+  --psa-shadow-xl: var(--psa-theme-shadow-xl);
+  
+  /* تنظیمات خاص تم تاریک برای المان‌ها */
+  background-color: var(--psa-color-bg-primary);
+  color: var(--psa-color-text-primary);
+}
+
+/* ====== تم آبی ====== */
+[data-theme="blue"],
+.psa-theme-blue {
+  --psa-theme-bg-primary: #ffffff;
+  --psa-theme-bg-secondary: #f0f7ff;
+  --psa-theme-bg-tertiary: #e1effe;
+  
+  --psa-theme-surface: #ffffff;
+  --psa-theme-surface-hover: #f0f7ff;
+  
+  --psa-theme-border: #b3d7ff;
+  --psa-theme-divider: #cce4ff;
+  
+  --psa-color-primary: #0066cc;
+  --psa-color-primary-dark: #0052a3;
+  --psa-color-primary-light: #3385d6;
+  --psa-color-primary-50: #e6f2ff;
+  
+  --psa-color-secondary: #3498db;
+  --psa-color-success: #27ae60;
+  --psa-color-warning: #f39c12;
+  --psa-color-danger: #e74c3c;
+  --psa-color-info: #2980b9;
+}
+
+/* ====== تم سبز ====== */
+[data-theme="green"],
+.psa-theme-green {
+  --psa-theme-bg-primary: #ffffff;
+  --psa-theme-bg-secondary: #f0f9f0;
+  --psa-theme-bg-tertiary: #e1f3e1;
+  
+  --psa-theme-surface: #ffffff;
+  --psa-theme-surface-hover: #f0f9f0;
+  
+  --psa-theme-border: #b3e0b3;
+  --psa-theme-divider: #cce8cc;
+  
+  --psa-color-primary: #2e7d32;
+  --psa-color-primary-dark: #1b5e20;
+  --psa-color-primary-light: #4caf50;
+  --psa-color-primary-50: #e8f5e9;
+  
+  --psa-color-secondary: #66bb6a;
+  --psa-color-success: #27ae60;
+  --psa-color-warning: #f39c12;
+  --psa-color-danger: #e74c3c;
+  --psa-color-info: #26a69a;
+}
+
+/* ====== تم بنفش ====== */
+[data-theme="purple"],
+.psa-theme-purple {
+  --psa-theme-bg-primary: #ffffff;
+  --psa-theme-bg-secondary: #f5f0ff;
+  --psa-theme-bg-tertiary: #ebe1fe;
+  
+  --psa-theme-surface: #ffffff;
+  --psa-theme-surface-hover: #f5f0ff;
+  
+  --psa-theme-border: #d1b3ff;
+  --psa-theme-divider: #e2ccff;
+  
+  --psa-color-primary: #7b1fa2;
+  --psa-color-primary-dark: #4a0072;
+  --psa-color-primary-light: #9c27b0;
+  --psa-color-primary-50: #f3e5f5;
+  
+  --psa-color-secondary: #ab47bc;
+  --psa-color-success: #7cb342;
+  --psa-color-warning: #ffa000;
+  --psa-color-danger: #e53935;
+  --psa-color-info: #5c6bc0;
+}
+
+/* ====== Transition برای تغییر تم ====== */
+body,
+.psa-card,
+.psa-btn,
+.psa-form-control,
+.psa-badge {
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* ====== کلاس‌های کمکی برای تم‌ها ====== */
+/* Background کلاس‌ها برای تم‌ها */
+.psa-bg-theme-primary {
+  background-color: var(--psa-color-bg-primary) !important;
+}
+
+.psa-bg-theme-secondary {
+  background-color: var(--psa-color-bg-secondary) !important;
+}
+
+.psa-bg-theme-tertiary {
+  background-color: var(--psa-color-bg-tertiary) !important;
+}
+
+.psa-bg-theme-surface {
+  background-color: var(--psa-theme-surface) !important;
+}
+
+.psa-bg-theme-surface-hover {
+  background-color: var(--psa-theme-surface-hover) !important;
+}
+
+/* Text کلاس‌ها برای تم‌ها */
+.psa-text-theme-primary {
+  color: var(--psa-color-text-primary) !important;
+}
+
+.psa-text-theme-secondary {
+  color: var(--psa-color-text-secondary) !important;
+}
+
+.psa-text-theme-tertiary {
+  color: var(--psa-theme-text-tertiary) !important;
+}
+
+.psa-text-theme-disabled {
+  color: var(--psa-color-text-disabled) !important;
+}
+
+/* Border کلاس‌ها برای تم‌ها */
+.psa-border-theme {
+  border-color: var(--psa-color-border) !important;
+}
+
+.psa-border-theme-divider {
+  border-color: var(--psa-color-divider) !important;
+}
+
+/* ====== دکمه تغییر تم ====== */
+.psa-theme-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--psa-color-bg-secondary);
+  border: 1px solid var(--psa-color-border);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.psa-theme-toggle:hover {
+  background-color: var(--psa-color-bg-tertiary);
+  transform: scale(1.05);
+}
+
+.psa-theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.psa-theme-toggle-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.psa-theme-toggle-icon.sun {
+  color: #f39c12;
+}
+
+.psa-theme-toggle-icon.moon {
+  color: #3498db;
+}
+
+/* انیمیشن برای تغییر تم */
+@keyframes theme-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes theme-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.psa-theme-transition-enter {
+  animation: theme-fade-in 0.3s ease forwards;
+}
+
+.psa-theme-transition-exit {
+  animation: theme-fade-out 0.3s ease forwards;
+}
+
+/* ====== تنظیمات برای تم تاریک روی المان‌های خاص ====== */
+[data-theme="dark"] img,
+.psa-theme-dark img {
+  filter: brightness(0.9) contrast(1.1);
+}
+
+[data-theme="dark"] .psa-card,
+.psa-theme-dark .psa-card {
+  background-color: var(--psa-theme-surface);
+}
+
+[data-theme="dark"] .psa-btn-outline-primary,
+.psa-theme-dark .psa-btn-outline-primary {
+  border-color: var(--psa-color-primary-light);
+  color: var(--psa-color-primary-light);
+}
+
+[data-theme="dark"] .psa-btn-outline-primary:hover:not(:disabled),
+.psa-theme-dark .psa-btn-outline-primary:hover:not(:disabled) {
+  background-color: var(--psa-color-primary);
+  color: white;
+}
+
+[data-theme="dark"] .psa-form-control,
+.psa-theme-dark .psa-form-control {
+  background-color: var(--psa-theme-surface);
+  border-color: var(--psa-theme-border);
+  color: var(--psa-theme-text-primary);
+}
+
+[data-theme="dark"] .psa-form-control:focus,
+.psa-theme-dark .psa-form-control:focus {
+  background-color: var(--psa-theme-surface);
+  border-color: var(--psa-color-primary);
+}
+
+[data-theme="dark"] .psa-input-group-prepend,
+[data-theme="dark"] .psa-input-group-append,
+.psa-theme-dark .psa-input-group-prepend,
+.psa-theme-dark .psa-input-group-append {
+  background-color: var(--psa-theme-bg-tertiary);
+  border-color: var(--psa-theme-border);
+  color: var(--psa-theme-text-secondary);
+}
+
+/* ====== System Theme Detection ====== */
+@media (prefers-color-scheme: dark) {
+  /* اگر کاربر تم سیستمی تاریک داشته باشد و ما حالت خودکار داریم */
+  :root:not([data-theme]):not(.psa-theme-light) {
+    /* اعمال متغیرهای تم تاریک */
+    --psa-theme-bg-primary: #1a1a1a;
+    --psa-theme-bg-secondary: #2d2d2d;
+    --psa-theme-bg-tertiary: #404040;
+    
+    --psa-theme-surface: #2d2d2d;
+    --psa-theme-surface-hover: #404040;
+    
+    --psa-theme-border: #404040;
+    --psa-theme-divider: #4d4d4d;
+    
+    --psa-theme-text-primary: #f8f9fa;
+    --psa-theme-text-secondary: #adb5bd;
+    --psa-theme-text-tertiary: #6c757d;
+    --psa-theme-text-disabled: #495057;
+    
+    --psa-theme-shadow-color: rgba(0, 0, 0, 0.3);
+    --psa-theme-shadow-color-light: rgba(0, 0, 0, 0.2);
+    
+    /* Override متغیرهای اصلی */
+    --psa-color-bg-primary: var(--psa-theme-bg-primary);
+    --psa-color-bg-secondary: var(--psa-theme-bg-secondary);
+    --psa-color-bg-tertiary: var(--psa-theme-bg-tertiary);
+    
+    --psa-color-text-primary: var(--psa-theme-text-primary);
+    --psa-color-text-secondary: var(--psa-theme-text-secondary);
+    --psa-color-text-disabled: var(--psa-theme-text-disabled);
+    
+    --psa-color-border: var(--psa-theme-border);
+    --psa-color-divider: var(--psa-theme-divider);
+    
+    --psa-shadow-sm: var(--psa-theme-shadow-sm);
+    --psa-shadow-base: var(--psa-theme-shadow);
+    --psa-shadow-md: var(--psa-theme-shadow-md);
+    --psa-shadow-lg: var(--psa-theme-shadow-lg);
+    --psa-shadow-xl: var(--psa-theme-shadow-xl);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* اگر کاربر تم سیستمی روشن داشته باشد */
+  :root:not([data-theme]):not(.psa-theme-dark) {
+    /* اعمال متغیرهای تم روشن (پیش‌فرض) */
+    /* متغیرهای تم روشن قبلاً تعریف شده‌اند */
+  }
+}
+
+/* ====== Accessibility برای تم‌ها ====== */
+/* تضمین کنتراست مناسب برای متن روی background */
+.psa-theme-dark .psa-text-on-primary {
+  color: white !important;
+}
+
+.psa-theme-dark .psa-text-on-secondary {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.psa-theme-light .psa-text-on-primary {
+  color: white !important;
+}
+
+.psa-theme-light .psa-text-on-secondary {
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --psa-color-primary: #0066cc;
+    --psa-color-primary-dark: #004080;
+    --psa-color-primary-light: #3399ff;
+    
+    --psa-theme-text-primary: #000000;
+    --psa-theme-text-secondary: #333333;
+    --psa-theme-border: #000000;
+  }
+  
+  [data-theme="dark"],
+  .psa-theme-dark {
+    --psa-theme-text-primary: #ffffff;
+    --psa-theme-text-secondary: #cccccc;
+    --psa-theme-border: #ffffff;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .psa-theme-toggle,
+  .psa-btn,
+  .psa-card {
+    transition: none !important;
+  }
+}
+
+/* ====== کلاس‌های کمکی برای مدیریت تم ====== */
+.psa-theme-auto {
+  /* استفاده از تم سیستمی */
+}
+
+.psa-theme-manual {
+  /* استفاده از تم دستی */
+}
+
+.psa-theme-persist {
+  /* تم ذخیره شده در localStorage */
+}
+
+/* ====== حالت‌های خاص برای پریستارا ====== */
+/* حالت مدیریت محتوا */
+.psa-theme-editor {
+  --psa-theme-bg-secondary: #f5f7fa;
+  --psa-theme-border: #d1d9e6;
+  --psa-color-primary: #1abc9c;
+}
+
+/* حالت پیش‌نمایش */
+.psa-theme-preview {
+  --psa-theme-bg-primary: #f8f9fa;
+  --psa-theme-bg-secondary: #ffffff;
+  --psa-theme-border: #e9ecef;
+}
+
+/* حالت تمرکز (Focus Mode) */
+.psa-theme-focus {
+  --psa-theme-bg-primary: #2c3e50;
+  --psa-theme-bg-secondary: #34495e;
+  --psa-theme-text-primary: #ecf0f1;
+  --psa-color-primary: #1abc9c;
+}
+
+/* ====== Utility Classes برای تم‌ها ====== */
+/* تغییر سریع تم */
+.psa-theme-light-force {
+  /* اجباری کردن تم روشن */
+  --psa-theme-bg-primary: #ffffff !important;
+  --psa-theme-bg-secondary: #f8f9fa !important;
+  --psa-theme-text-primary: #212529 !important;
+  /* ... سایر متغیرها */
+}
+
+.psa-theme-dark-force {
+  /* اجباری کردن تم تاریک */
+  --psa-theme-bg-primary: #1a1a1a !important;
+  --psa-theme-bg-secondary: #2d2d2d !important;
+  --psa-theme-text-primary: #f8f9fa !important;
+  /* ... سایر متغیرها */
+}
+
+/* گرادیانت‌های رنگی برای تم‌ها */
+.psa-gradient-primary {
+  background: linear-gradient(135deg, var(--psa-color-primary), var(--psa-color-primary-dark));
+}
+
+.psa-gradient-secondary {
+  background: linear-gradient(135deg, var(--psa-color-secondary), #2980b9);
+}
+
+.psa-gradient-theme {
+  background: linear-gradient(135deg, var(--psa-theme-bg-primary), var(--psa-theme-bg-secondary));
+}
+
+/* شفافیت برای تم‌ها */
+.psa-glass-effect {
+  background: rgba(var(--psa-theme-bg-primary-rgb), 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(var(--psa-theme-border-rgb), 0.2);
+}
+
+/* Shadow های مخصوص تم */
+.psa-shadow-theme {
+  box-shadow: 0 4px 20px var(--psa-theme-shadow-color);
+}
+
+.psa-shadow-theme-lg {
+  box-shadow: 0 10px 40px var(--psa-theme-shadow-color);
+}
+
+/* Border های مخصوص تم */
+.psa-border-theme-thick {
+  border: 2px solid var(--psa-theme-border);
+}
+
+.psa-border-theme-dashed {
+  border: 1px dashed var(--psa-theme-border);
+}
+
+.psa-border-theme-dotted {
+  border: 1px dotted var(--psa-theme-border);
+}
